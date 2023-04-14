@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /*se formatea el html*/
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    list-style: none; /* retira los puntos de las listas*/
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none; /*quita el subrayado de los enlaces*/
+    color: #f1f1f1;
+    font-weight: bold; /*negrilla con el bold*/
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+/* contenedor*/
+
+.container {
+    /* display: none; */
+}
+
+/* navbar*/
+
+.menu {
+    width: 95%;
+    margin-inline:auto;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*logo*/
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+}
+
+.logo-name {
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo-name span {
+    color: rgb(248, 190, 0);
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+/* opciones del navbar*/
+
+.nav-menu {
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:70px;
+    display: none;
+}
+
+/* lista de navbar*/
+
+.navigation{
+    
+    background-color: red;
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.navigation li {
+    width: 100%;
+    text-align: center;
+}
+
+.navigation li a {
+    display: block; /* ocupa todo el ancho*/
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navigation li:last-of-type{
+    width: auto;
+}
+
+.navigation li:last-of-type:hover{
+    background-color: transparent;
+ }
+
+.navigation li a:hover{
+    background-color: rgb(248,194,0);
+}
+
+/* formulario - lupa e input*/
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(62,62,62);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+}
+
+.form input {
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background-color: transparent;
+}
+
+/* clase para que aparezca el contenido*/
+
+.responsive-dinamic {
+    display: block;
+}
+
+
+@media (min-width: 768px) {
+    .menu{
+        flex-direction: row;
+        align-items: center;
+    }
+    .logo-name {
+        font-size: 30px;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .nav-menu {
+        position: static;
+        width: auto;
+    }
+
+    .navigation {
+        flex-direction: row;
+        gap: 20px;
+        
+    }
+
+}

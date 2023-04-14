@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 18px;
+}
+img{
+    width: 100%;
+}
+/* Contenedor - del banner */
+.container{
+    /* display: none; */
+}
+/* Menu - contiene la parte superior */
+.menu{
+    width: 95%;
+    margin-inline:auto;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+@media (min-width:768px) {
+    .menu{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+/* Logo */
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+}
+.logo-name{
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 20px;
+}
+.logo-name span{
+    color: rgb(248,194,0);
+}
+@media (min-width:768px) {
+    .logo-name{
+        font-size: 30px;
+    }
+}
+.logo img{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+@media (min-width:768px) {
+    .logo img{
+        display: none;
+    }
+}
+/* Contenedor de la navegacion */
+.nav-menu{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    /* display: none; */
+}
+@media (min-width:768px) {
+    .nav-menu{
+        position: static;
+        width: auto;
+    }
+}
+/* Contenedor lista navegacion */
+.navigation{
+    background-color: red;
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+}
