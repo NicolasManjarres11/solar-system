@@ -24,3 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.add('responsive-dinamic');
     }
 })
+
+window.addEventListener('load', ()=> {
+    const container = document.getElementById('container');
+    const planetsContainer = document.getElementById('planets-container');
+    const spinner = document.getElementById('spinner');
+
+    setTimeout(()=> {
+        spinner.style.display = 'none';
+        container.style.display = 'block';
+        planetsContainer.style.display = 'block';
+    },2000)
+})
