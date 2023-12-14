@@ -10,10 +10,10 @@ hamburguer.addEventListener('click',() => {
         hamburguer.src = '../../img/hamburguesa.png';
     } */
     switch(hamburguer.src.split('img')[1]){
-        case ('/hamburguesa.png'):
-            hamburguer.src = '../../img/cruz.png';
-            break
         case ('/cruz.png'):
+            cruz.src = '../../img/cruz.png';
+            break
+        case ('/hamburguer.png'):
             hamburguer.src = '../../img/hamburguesa.png';
             break
     }
