@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-window.addEventListener('load', ()=> {
+/* window.addEventListener('load', ()=> {
     const container = document.getElementById('container');
     const planetsContainer = document.getElementById('planets-container');
     const spinner = document.getElementById('spinner');
@@ -35,4 +35,4 @@ window.addEventListener('load', ()=> {
         container.style.display = 'block';
         planetsContainer.style.display = 'block';
     },2000)
-})
+}) */
