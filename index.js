@@ -21,7 +21,7 @@ hamburguer.addEventListener('click',() => {
     /* if (navMenu.classList.contains('responsive-dinamic')) {
         hamburguer.src = './img/cruz.png';
     } else {
-        hamburguer.src = './img/hamburguesa.png';
+        hamburguer.src = './img/hamburguesa.png';...
     } */
 
     hamburguer.src = navMenu.classList.contains('responsive-dinamic')
