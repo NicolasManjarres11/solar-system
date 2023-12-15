@@ -32,7 +32,7 @@ hamburguer.addEventListener('click',() => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth < 768) {
         navMenu.classList.add('responsive-dinamic');
     }
 })
