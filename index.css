@@ -30,7 +30,7 @@ img {
 /* contenedor*/
 
 .container {
-    display: block;
+    display: grid;
 }
 
 /* navbar*/
@@ -149,7 +149,7 @@ img {
 /* clase para que aparezca el contenido*/
 
 .responsive-dinamic {
-    display: block;
+    display: none;
 }
 
 /* Contenedor del banner*/

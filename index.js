@@ -9,15 +9,27 @@ hamburguer.addEventListener('click',() => {
     else{
         hamburguer.src = '../../img/hamburguesa.png';
     } */
-    switch(hamburguer.src.split('img')[1]){
+    /* switch(hamburguer.src.split('img')[1]){
         case ('/cruz.png'):
-            cruz.src = '../../img/cruz.png';
+            hamburguer.src = './img/cruz.png';
             break
         case ('/hamburguer.png'):
-            hamburguer.src = '../../img/hamburguesa.png';
+            hamburguer.src = './img/hamburguesa.png';
             break
-    }
-})
+    } */
+
+    /* if (navMenu.classList.contains('responsive-dinamic')) {
+        hamburguer.src = './img/cruz.png';
+    } else {
+        hamburguer.src = './img/hamburguesa.png';
+    } */
+
+    hamburguer.src = navMenu.classList.contains('responsive-dinamic')
+        ? './img/hamburguesa.png'
+        : './img/cruz.png';
+});
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     if (window.innerWidth > 768) {
